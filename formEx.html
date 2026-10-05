@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEx</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="success.html" method="GET">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>UserName :</label>
+        <input type="text" placeholder="only capital letters" value="Anku" name="uname" required/><br/>
+        
+        <label>Password :</label>
+        <input type="password" placeholder="Enter pasword" required/><br/>
+        
+        <label>Email :</label>
+        <input type="email" placeholder="Enter email" value="@gmail.com" required/><br/>
+        
+        <label>Mobile No :</label>
+        <input type="tel" placeholder="9876543210" required/><br/>
+        
+        <label>DOB :</label>
+        <input type="date" required/><br/>
+        
+        <label>Age :</label>
+        <input type="number" placeholder="Enter age" required/><br/>
+        
+        <label>Gender :</label>
+        <input type="radio" name="gender" value="Male"/>Male
+        <input type="radio" name="gender" value="Female"/>Female
+        <input type="radio" name="gennder" value="Other"/>Other<br/>
+        
+        <label>Choose your hobbies :</label><br/>
+        <input type="checkbox" name="book" value="book"/>Reading Books<br/>
+        <input type="checkbox" name="sport" value="sport"/>Sports<br/>
+        <input type="checkbox" name="art" value="art"/>Art<br/>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Other info</legend>
+            <!-- drop down box -->
+            <label>Select your state :</label>
+        <select name="state">
+            <option value="Telangana">Telangana</option>
+            <option value="Andhra pradesh">AP</option>
+            <option value="banglore">Banglore</option>
+            <option value="UP">UP</option>
+            <option value="Maharastra">Maharastra</option>
+        </select><br/>
+
+        <label>Feedback :</label><br/>
+        <textarea rows="10" cols="40"></textarea>
+        </fieldset>
+        
+        <input type="submit" value="login"/>
+    </form>
+</body>
+</html>
